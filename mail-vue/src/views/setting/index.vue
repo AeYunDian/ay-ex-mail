@@ -37,6 +37,26 @@
         <el-option label="English" value="en" @pointerdown.prevent.stop="changeLang('en')" />
       </el-select>
     </div>
+    <div class="container">
+      <div class="title">{{ $t('giveFeedback') }}</div>
+      <div style="color: var(--regular-text-color);">
+        {{ $t('feedbackDesc') }}
+      </div>
+      <div>
+        <el-button type="primary"
+          @click="jump('https://github.com/AeYunDian/ay-ex-mail/issues/new?template=bug_report.md')">
+          {{ $t('bugFeedback') }}
+        </el-button>
+        <el-button type="primary"
+          @click="jump('https://github.com/AeYunDian/ay-ex-mail/issues/new?template=feature_request.md')">
+          {{ $t('featureRequest') }}
+        </el-button>
+        <el-button type="primary"
+          @click="jump('https://github.com/AeYunDian/ay-ex-mail/issues/new?template=need_help.md')">
+          {{ $t('needHelp') }}
+        </el-button>
+      </div>
+    </div>
     <div class="del-email" v-perm="'my:delete'">
       <div class="title">{{ $t('deleteUser') }}</div>
       <div style="color: var(--regular-text-color);">
@@ -44,23 +64,6 @@
       </div>
       <div>
         <el-button type="primary" @click="deleteConfirm">{{ $t('deleteUserBtn') }}</el-button>
-      </div>
-    </div>
-    <div class="concerning-item">
-      <div class="title">{{ $t('giveFeedback') }}</div>
-      <div style="color: var(--regular-text-color);">
-        {{ $t('feedbackDesc') }}
-      </div>
-      <div>
-        <el-button type="primary" @click="jump('https://github.com/AeYunDian/ay-ex-mail/issues/new?template=bug_report.md')">
-          {{ $t('bugFeedback') }}
-        </el-button>
-        <el-button type="primary" @click="jump('https://github.com/AeYunDian/ay-ex-mail/issues/new?template=feature_request.md')">
-          {{ $t('featureRequest') }}
-        </el-button>
-        <el-button type="primary" @click="jump('https://github.com/AeYunDian/ay-ex-mail/issues/new?template=need_help.md')">
-          {{ $t('needHelp') }}
-        </el-button>
       </div>
     </div>
     <el-dialog v-model="pwdShow" :title="$t('changePassword')" width="340">
