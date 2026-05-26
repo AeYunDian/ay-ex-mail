@@ -337,6 +337,12 @@ const zh = {
     searchUser: '搜索用户',
     searchEmail: '搜索邮箱',
     searchSender: '搜索发件人',
-    userEmail: '用户邮箱'
+    userEmail: '用户邮箱',
+
+    giveFeedback: '反馈建议',
+    feedbackDesc: '如果您在使用过程中遇到任何问题，或者有任何建议和意见，您可以点击下面的按钮按类型反馈我们。我们非常重视用户的反馈，并会尽快回复您。',
+    bugFeedback: '问题反馈',
+    featureRequest: '功能建议',
+    needHelp: '需要帮助？'
 }
 export default zh

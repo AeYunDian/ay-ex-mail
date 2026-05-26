@@ -337,7 +337,12 @@ const en = {
     searchUser: 'Search by user',
     searchEmail: 'Search by Email',
     searchSender: 'Search by Sender',
-    userEmail: 'Email Address'
+    userEmail: 'Email Address',
+    giveFeedback: 'Feedback',
+    feedbackDesc: 'If you encounter any issues while using the application or have any suggestions or comments, you can click the buttons below to provide feedback. We highly value user feedback and will respond to you as soon as possible.',
+    bugFeedback: 'Bug Report',
+    featureRequest: 'Feature Request',
+    needHelp: 'Need Help?'
 }
 
 export default en

@@ -1,6 +1,6 @@
-name = "cloud-mail"
+name = "ay-ex-mail"
 main = "src/index.js"
-compatibility_date = "2025-06-04"
+compatibility_date = "2026-05-26"
 keep_vars = true
 
 [observability]
